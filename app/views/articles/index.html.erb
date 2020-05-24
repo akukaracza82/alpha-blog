@@ -10,8 +10,8 @@
   </thead>
 
   <tbody>
-  <% raise @articles.inspect %>
-    <% @articles.each do |article| %>
+  
+    <% Article.all.each do |article| %>
     <tr>
       <td><%= article.title %></td>
       <td>Some description</td>
